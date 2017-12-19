@@ -1,0 +1,96 @@
+body
+  margin 0
+
+.header, .form
+  margin 0 auto
+  width 100vw
+  max-width 80vh
+  display flex
+  justify-content space-between
+  align-items center
+
+.form
+  margin 30px auto
+
+.label
+  border 1px solid black
+  border-radius 2px
+  padding 10px 15px
+  cursor pointer
+  flex 20% 0 0
+  font-size 13px
+  text-align center
+  font-family Arial
+  color black
+  text-decoration none
+
+.file
+  display none
+
+.footer
+  margin 0 auto
+  width 100vw
+  max-width 80vh
+  display flex
+  flex-direction column
+  word-break break-word
+
+.footer-row
+  display flex
+  justify-content space-between
+
+.dropdown
+  display inline-block
+  position relative
+
+.dropdown__content
+  display none
+  position absolute
+  z-index 100
+  &.right
+    right 0
+
+.dropdown--active .dropdown__content
+  display block
+
+h3
+  text-align center
+
+.board
+  margin 0 auto
+  width 100vw
+  max-width 80vh
+  height 100vw
+  max-height 80vh
+  font-size 1rem
+
+.row
+  display flex
+
+.square
+  flex 1 0 auto
+  border 1px solid black
+  position relative
+  span
+    user-select none
+  &:after
+    content ""
+    float left
+    display block
+    padding-top 100%
+
+.piece
+  background-color transparent
+  background-size cover
+  height 100%
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  top 0
+  display flex
+  align-items center
+  justify-content center
+  
+  
+  
