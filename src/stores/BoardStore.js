@@ -99,7 +99,6 @@ class Board {
       const key = Object.keys(square)[0]
       tempObject[key] = square[key]
     }))
-    console.log(tempObject)
     Storage.set(chessKey, tempObject)
     ReactAlert.success('Saved!', {
       position: 'bottom-right',
